@@ -8,8 +8,8 @@ MClash 的**发布仓库**：仅存放编译产物与版本说明，源码不在
 
 | 版本 | 文件 | 大小 | SHA256 |
 |---|---|---|---|
-| b0.0.1 | `Mclash-b0.0.1-win64-setup.exe` | 28,154,915 B | `60dac63c93200a532c7cf98974b73ccfc10e5712c0f584528f2f76c0be230b82` |
-| b0.0.1 | `mclash-core-b0.0.1-win64.zip` | 5.6 MB | `55cdba01b7af3aad3d81dee8e9abc7404d0de45b6b51693e0dbc2ed9532b5833` |
+| b0.0.1 (GA) | `Mclash-b0.0.1-win64-setup.exe` | 28,157,629 B | `7b405aeb2f4d6c9282741406f81311ed10fb96a96fd7b4cc05521ada5c43b799` |
+| b0.0.1 (GA) | `mclash-core-b0.0.1-win64.zip` | 5,834,838 B | `55cdba01b7af3aad3d81dee8e9abc7404d0de45b6b51693e0dbc2ed9532b5833` |
 
 ## 仓库分工
 
@@ -30,8 +30,12 @@ MClash 的**发布仓库**：仅存放编译产物与版本说明，源码不在
 
 ## 版本说明
 
-### b0.0.1
+### b0.0.1 (GA)
 
+首个 GA（General Availability）版本。
+
+- 恢复应用内自动更新检查（读取本仓库 Releases）
+- 移除右上角 PRE 标记（`appEnv` 默认 `stable`）
 - 架构：Windows x64，服务化内核（`MclashCore` 服务 + 命名管道）
 - 安装包内置 TUN 驱动（wintun）与 sqlite3 原生库
 - 构建可复现：纯 clone 零叠加、清空 sqlite3 缓存、不设 `PUB_HOSTED_URL` 时 `BUILD_EXIT=0`
