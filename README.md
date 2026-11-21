@@ -10,7 +10,6 @@ MClash 的**发布仓库**：仅存放编译产物与版本说明，源码不在
 |---|---|---|---|
 | v1.0.0 (GA) | `Mclash-1.0.0-win64-setup.exe` | 28,132,159 B | `5fdd9a824bcc3aadbc4d423edc8604aa88bef7db6ee924b17b7466a206d94962` |
 | v1.0.0 (GA) | `mclash-core-1.0.0-win64.zip` | 6,306,651 B | `070fc688814f01622b8bf0fec88cef80475ee806f8445db8f4d7996ca2ce6d84` |
-| b0.0.1 | `Mclash-b0.0.1-win64-setup.exe` | 28,157,629 B | `7b405aeb2f4d6c9282741406f81311ed10fb96a96fd7b4cc05521ada5c43b799` |
 
 ## 仓库分工
 
@@ -42,10 +41,6 @@ MClash 的**发布仓库**：仅存放编译产物与版本说明，源码不在
 - 安装包内置 TUN 驱动（wintun 0.14.1）与 sqlite3 原生库
 - 测试：**254 passed / 0 failed / 2 ignored**（real-machine 用例需凭据）
 - 构建可复现：纯 clone 零叠加、清空 sqlite3 缓存、不设 `PUB_HOSTED_URL` 时 `BUILD_EXIT=0`
-
-### b0.0.1 — 2026-11-21
-
-首个公开构建，保留作历史版本。
 
 ## 内核包说明
 
